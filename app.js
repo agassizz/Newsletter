@@ -36,7 +36,7 @@ app.post("/", function(req, res){
         url: "https://us3.api.mailchimp.com/3.0/lists/974b497858",
         method:"POST",
         headers: {
-            "Authorization": "Pascalog 4464ab60323a307f8e9eeaf3c2bb3f69-us3"
+            "Authorization": "Pascalog a1afba26fe51e204d52fdfc88b75a66b-us3"
         },
         body: jsonData
     };
@@ -65,9 +65,3 @@ app.listen(process.env.PORT || 3000, function () {
 });
 
 
-
-// API KEY 
-//4464ab60323a307f8e9eeaf3c2bb3f69-us3
-
-//lIST ID
-// 974b497858
