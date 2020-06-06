@@ -33,7 +33,7 @@ app.post("/", function(req, res){
     var jsonData = JSON.stringify(data);
 
     var options = {
-        url: "https://us3.api.mailchimp.com/3.0/lists/974b497858",
+        url: "https://us3.api.mailchimp.com/3.0/lists/974b497858 + mykey",
         method:"POST",
         headers: {
             "Authorization": "Pascalog a1afba26fe51e204d52fdfc88b75a66b-us3"
@@ -55,6 +55,9 @@ app.post("/", function(req, res){
     });
 
 });
+
+var mykey = config.MY_KEY;
+var secretkey = config.SECRET_KEY;
 
 app.post("/failure", function(req, res) {
     res.redirect("/");
