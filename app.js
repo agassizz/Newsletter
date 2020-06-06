@@ -56,8 +56,6 @@ app.post("/", function(req, res){
 
 });
 
-var mykey = config.MY_KEY;
-var secretkey = config.SECRET_KEY;
 
 app.post("/failure", function(req, res) {
     res.redirect("/");
