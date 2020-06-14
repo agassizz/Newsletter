@@ -36,7 +36,7 @@ app.post("/", function(req, res){
         url: "https://us3.api.mailchimp.com/3.0/lists/974b497858 + mykey",
         method:"POST",
         headers: {
-            "Authorization": "Pascalog a1afba26fe51e204d52fdfc88b75a66b-us3"
+            "Authorization": "Pascalog b36b077b2c449b94b5ce551824bcb546-us3"
         },
         body: jsonData
     };
