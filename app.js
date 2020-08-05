@@ -36,7 +36,7 @@ app.post("/", function(req, res){
         url: "https://us3.api.mailchimp.com/3.0/lists/974b497858 + mykey",
         method:"POST",
         headers: {
-            "Authorization": "Pascalog b36b077b2c449b94b5ce551824bcb546-us3"
+            "Authorization": "Pascalog fd0adf541692a2400047125817327048-us3"
         },
         body: jsonData
     };
@@ -57,11 +57,12 @@ app.post("/", function(req, res){
 });
 
 
+
 app.post("/failure", function(req, res) {
     res.redirect("/");
 });
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 8080, function () {
     console.log("Server successfully running on Port 3000");
 });
 
