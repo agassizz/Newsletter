@@ -33,7 +33,7 @@ app.post("/", function(req, res){
     var jsonData = JSON.stringify(data);
 
     var options = {
-        url: "https://us3.api.mailchimp.com/3.0/lists/974b497858 + mykey",
+        url: `https://us3.api.mailchimp.com/3.0/lists/974b497858`,
         method:"POST",
         headers: {
             "Authorization": "Pascalog fd0adf541692a2400047125817327048-us3"
@@ -44,6 +44,7 @@ app.post("/", function(req, res){
     request(options, function(error, response, body){
        
         if(error) {
+            
             res.sendFile(__dirname +"/failure.html");
         }else {
             if(response.statusCode ===200) {
@@ -63,7 +64,7 @@ app.post("/failure", function(req, res) {
 });
 
 app.listen(process.env.PORT || 8080, function () {
-    console.log("Server successfully running on Port 3000");
+    console.log("Server successfully running on Port 8080");
 });
 
 
